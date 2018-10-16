@@ -1,0 +1,29 @@
+.hero-section {
+
+    position: relative;
+    background-size: cover;
+    background-position: 100%;
+    background-repeat: no-repeat;
+
+    * {
+        color: #fff;
+        z-index: 100;
+    }
+
+    &__title {
+
+        font-size: 3rem;
+    }
+
+    &:after {
+
+       position: absolute;
+        display: block;
+        content: "";
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,.6);
+    }
+}

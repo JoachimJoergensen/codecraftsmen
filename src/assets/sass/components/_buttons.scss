@@ -1,0 +1,13 @@
+.btn {
+
+    padding: 1rem;
+    color: pink;
+    font-weight: 800;
+    border: none;
+    display: inline-block;
+
+    &--hero {
+
+        color: yellow;
+    }
+}
