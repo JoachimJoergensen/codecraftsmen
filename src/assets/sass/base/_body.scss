@@ -1,11 +1,11 @@
-:root {
-
-    font-size: 16px;
-}
-
 *, *:before, *:after {
 
     box-sizing: inherit;
+}
+
+:root {
+
+    font-size: 16px;
 }
 
 html {
@@ -21,6 +21,7 @@ body {
 
 body {
 
+    padding-top: 52px;
     font-size: 1rem;
     line-height: 1.4;
     font-weight: 400;

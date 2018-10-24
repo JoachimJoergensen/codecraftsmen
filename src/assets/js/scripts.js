@@ -1,12 +1,20 @@
 window.$ = window.jQuery = require('jquery');
 window.Vue = require('vue');
 
-Vue.component('hero', require('./components/Hero.vue'));
-Vue.component('header-component', require('./components/HeaderComponent.vue'));
-Vue.component('services', require('./components/Services.vue'));
-Vue.component('about', require('./components/About.vue'));
-Vue.component('footer-component', require('./components/FooterComponent.vue'));
+Vue.component('header-component', require('./components/HeaderComponent'));
+Vue.component('hero-component', require('./components/HeroComponent'));
+Vue.component('service-component', require('./components/ServiceComponent'));
+Vue.component('about-component', require('./components/AboutComponent'));
+Vue.component('footer-component', require('./components/FooterComponent'));
+
+import VueResources from 'vue-resource';
+import router from './router';
+
+Vue.use(VueResources);
+Vue.http.options.root = 'http://headlesscms.localhost/wp-json/';
+
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    router
 });
