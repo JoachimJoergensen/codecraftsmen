@@ -1,7 +1,7 @@
 <template>
     <footer class="page-footer p-10">
         <section class="page-footer">
-            <div class="container is-widescreen">
+            <div class="container">
                 <div class="columns">
                     <div class="column">
                         1
